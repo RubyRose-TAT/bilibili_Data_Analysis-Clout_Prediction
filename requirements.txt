@@ -1,0 +1,13 @@
+jieba==0.42.1
+lightgbm==3.3.1
+matplotlib==3.3.4
+numpy==1.20.1
+pandas==1.2.4
+Pillow==8.4.0
+plotly==5.5.0
+pyecharts==1.9.1
+scikit_learn==1.0.2
+shap==0.40.0
+streamlit==1.2.0
+streamlit_echarts==0.3.0
+xgboost==1.5.1
