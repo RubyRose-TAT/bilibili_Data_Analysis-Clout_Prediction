@@ -8,10 +8,10 @@ from Regression_Prediction import *
 def main():
     PAGES = {
         "集成学习": Model_show,
-        "随机森林": Model_show,
-        "GBDT": Model_show,
-        "XGBoost": Model_show,
-        "LightGBM": Model_show,
+        "随机森林": Random_Forest,
+        "GBDT": GBDT,
+        "XGBoost": XGBoost,
+        "LightGBM": LightGBM,
 
     }
 

@@ -40,10 +40,8 @@ def Regression_Prediction():
     df = LabelEncoding(df)
 
     df = df.drop(["author","title","tag"],axis = 1)
-    df
     X = df.drop(["views"],axis = 1)
     Y = df["views"]
-    df
 
     
     # 加载模型
@@ -67,7 +65,7 @@ def Regression_Prediction():
         danmu = st.sidebar.slider('danmu', 0, 200000, 1000, 1000)
         reply = st.sidebar.slider('reply', 0, 50000, 200, 10)
         funs = st.sidebar.slider('funs', 0, 10000000, 10000, 1000)
-        partition = st.sidebar.slider('partition', X.partition.min(), X.partition.max(), 0)
+        partition = st.sidebar.slider('partition', X.partition.min(), X.partition.max(), 0, 1)
         time = st.sidebar.slider('time', 0, 600, 10)
         like_rate = st.sidebar.slider('like_rate', float(0), float(1), 0.10, 0.01)
         data = {'partition': partition,
@@ -110,14 +108,14 @@ def Regression_Prediction():
     explainer = shap.TreeExplainer(load_model)
     shap_values = explainer.shap_values(X)
 
-    fig1 = plt.subplots()
+    fig1,ax = plt.subplots()
     plt.title('Feature importance based on SHAP values')
     shap.summary_plot(shap_values, X)
     st.pyplot(fig1, bbox_inches='tight')
 
     st.write('---')
 
-    fig2 = plt.subplots()
+    fig2,ax = plt.subplots()
     plt.title('Feature importance based on SHAP values (Bar)')
     shap.summary_plot(shap_values, X, plot_type="bar")
     st.pyplot(fig2, bbox_inches='tight')

@@ -1,0 +1,16 @@
+RF：
+{'bootstrap': True,
+ 'max_depth': 55,
+ 'max_features': 'auto',
+ 'min_samples_leaf': 2,
+ 'min_samples_split': 3,
+ 'n_estimators': 200}
+ 
+ XGBT：
+ {'n_estimators': 450, 'learning_rate': 0.1, 'gamma': 0.1, 'subsample': 0.7, 'colsample_bytree': 0.8, 'reg_alpha': 100, 'reg_lambda': 1e-05, 'max_depth': 5, 'min_child_weight': 6}
+ 
+ LGBM：
+{'num_leaves': 11, 'learning_rate': 0.25, 'feature_fraction': 0.8, 'bagging_fraction': 0.8, 'bagging_freq': 5, 'reg_alpha': 100, 'reg_lambda': 0.1, 'max_depth': 4, 'min_data_in_leaf': 7, 'colsample_bytree': 0.8, 'feature_pre_filter': 'false'}
+ 
+ GBDT：
+{'n_estimators': 450, 'learning_rate': 0.2, 'max_depth': 5, 'min_samples_split': 480, 'min_samples_leaf': 10, 'subsample': 0.9,'max_features': 'sqrt'}
