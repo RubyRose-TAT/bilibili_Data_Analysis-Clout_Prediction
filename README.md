@@ -3,3 +3,6 @@
 ### 项目成员: 黄胜鸿 钟珺涛
 基于**streamlit**搭建的B站视频数据分析web应用
 获取B站热门视频数据集，数据可视化分析，对视频热度回归预测
+
+演示[demo](https://share.streamlit.io/rubyrose-tat/bilibili_data_analysis-clout_prediction/main/main.py)
+
