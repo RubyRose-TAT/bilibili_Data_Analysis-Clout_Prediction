@@ -7,6 +7,7 @@ def introduction():
 
     st.markdown("""
     # BiliBili视频数据分析预测
+    #### [项目地址](https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction)
     """)
 
     st.markdown("""
