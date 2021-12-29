@@ -65,7 +65,7 @@ def Regression_Prediction():
         danmu = st.sidebar.slider('danmu', 0, 200000, 1000, 1000)
         reply = st.sidebar.slider('reply', 0, 50000, 200, 10)
         funs = st.sidebar.slider('funs', 0, 10000000, 10000, 1000)
-        partition = st.sidebar.slider('partition', X.partition.min(), X.partition.max(), 0, 1)
+        partition = st.sidebar.slider('partition', 0, 18, 0, 1)
         time = st.sidebar.slider('time', 0, 600, 10)
         like_rate = st.sidebar.slider('like_rate', float(0), float(1), 0.10, 0.01)
         data = {'partition': partition,

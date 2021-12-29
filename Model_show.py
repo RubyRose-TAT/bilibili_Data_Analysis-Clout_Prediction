@@ -409,7 +409,7 @@ def Random_Forest():
 
     st.write("""
     ##### 代码实现
-    GitHub：[https://github.com)
+    GitHub：[https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/Random_Forest.ipynb](https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/2.bilibili_%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97.ipynb)
     """)
 
 
@@ -579,7 +579,7 @@ def GBDT():
 
     st.write("""
     ##### 代码实现
-    GitHub：[https://github.com)
+    GitHub：[https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/3.bilibili_GBDT.ipynb](https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/3.bilibili_GBDT.ipynb)
     """)
 
 
@@ -748,7 +748,7 @@ def XGBoost():
 
     st.write("""
     ##### 代码实现
-    GitHub：[https://github.com)
+    GitHub：[https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/4.bilibili_XGBoost.ipynb](https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/4.bilibili_XGBoost.ipynb)
     """)
 
 
@@ -875,7 +875,7 @@ def LightGBM():
     st.subheader('2. 模型性能')
 
     st.markdown('**测试集**')
-    Y_pred_test = load_model.predict(X_test, num_iteration = models.best_iteration)
+    Y_pred_test = load_model.predict(X_test, num_iteration = load_model.best_iteration)
     st.write('决定系数 ($R^2$):')
     st.info( r2_score(y_test, Y_pred_test) )
     st.write('均方误差 (RMSE):')
@@ -888,5 +888,5 @@ def LightGBM():
 
     st.write("""
     ##### 代码实现
-    GitHub：[https://github.com)
+    GitHub：[https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/5.bilibili_LIghtGBM.ipynb](https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/blob/main/bilibili/5.bilibili_LIghtGBM.ipynb)
     """)

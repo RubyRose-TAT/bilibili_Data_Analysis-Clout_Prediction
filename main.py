@@ -59,6 +59,6 @@ if __name__ == "__main__":
     with st.sidebar:
         st.markdown("---")
         st.markdown(
-            '<h6>Made in &nbsp&nbsp <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp&nbsp by &nbsp&nbsp&nbsp<a href="https://github.com/RubyRose-TAT/demo" style="font-family: 宋体; font-size:126%;">OwO</a></h6>',
+            '<h6>Made in &nbsp&nbsp <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp&nbsp by &nbsp&nbsp&nbsp<a href="https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction" style="font-family: 宋体; font-size:126%;">钟珺涛 黄胜鸿</a></h6>',
             unsafe_allow_html=True
         )
