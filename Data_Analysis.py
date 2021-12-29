@@ -88,6 +88,11 @@ def data_analysis():
     )
     components.html(word1, width=1350, height=750)
 
+    st.write("""
+    #####  结论
+    通过标题词云图容易看出，中国、游戏、世界、原神等字出现的比较多。这鼓励我们创作者们在标题的命名中可以往这边靠一靠
+    """)
+
     st.write('---')
     st.write("""
     #####  标题词频柱状图
@@ -192,7 +197,7 @@ def data_analysis():
 
     st.write("""
     #####  结论
-    标题这里能简单的到一些信息，人们通常喜欢用一些什么，表示惊讶的句子来当标题，这样好像很吸引人
+    以上说明创作者们比较喜欢用表示惊讶或疑问的标题，这样比较吸引人
     """)
 
     st.write('---')
@@ -262,25 +267,10 @@ def data_analysis():
         .render_embed()
     )
     components.html(c2, width=1000, height=500)
-
-    st.write('---')
-
-    c3 = (
-        Bar(init_opts=opts.InitOpts(theme=ThemeType.CHALK,height='500px',width='1000px'))
-        .add_xaxis(['animal','car','cinephile','dance','douga','ent','fashion','food','game','guochuang','kichiku','knowledge','life','music','origin','rookie','sports','tech'])
-        .add_yaxis("各大分区最大播放量",view_max_list)
-        .set_global_opts(
-                xaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(rotate=-15)),
-                title_opts=opts.TitleOpts(title="B站播放量分布", subtitle="单位:万"),
-                tooltip_opts=opts.TooltipOpts(trigger='axis',axis_pointer_type='cross')
-                )
-        .render_embed()
-    )
-    components.html(c3, width=1000, height=500)
    
     st.write("""
-    #####  各大分区播放量结论
-    内容补充____zsbd
+    #####  结论
+    不难发现，生活区和原创区的播放量是比较高的，但有一些分区比如说国创区，舞蹈区，汽车区播放量比较少，作为创作者可以考虑往观看人数比较多的分区进行投稿
     """)
 
     st.write('---')
@@ -328,11 +318,6 @@ def data_analysis():
         .render_embed()
     )
     components.html(b1, width=1000, height=500)
-
-    st.write("""
-    #####  结论
-    发布时间对视频播放量的影响不是很大，作为创作者应该在视频内容质量上下功夫
-    """)
 
     st.write('---')
     st.write("""
@@ -383,7 +368,7 @@ def data_analysis():
 
     st.write("""
     #####  结论
-    发布了越久的视频上热门的再次概率是比较小的，除非那个视频真的很火，所以创作者们观察前一两天视频的热度，就可以知道视频制作效果怎么样
+    在图一中可以看出，一些视频并不是发布时间越久，播放量就越高。通过图二可以发现，一些视频上热门大多数集中在1至5天内，若作品在1至5天内上热门 ，说明作品比较好，否则创作者应该在视频内容质量多下功夫
     """)
 
     st.write('---')
@@ -471,6 +456,11 @@ def data_analysis():
         )
         tl.add(funnel, time_point = i)
     st_pyecharts(tl,height="400px",width="1000px")
+
+    st.write("""
+    #####  结论
+    分析漏斗图胖瘦程度可以了解观众对视频的喜爱程度。我们还可以知道，大多视频是点赞量>硬币数>收藏>分享
+    """)
 
     st.write('---')
     st.write("""
@@ -588,6 +578,11 @@ def data_analysis():
     bar.overlap(line)
     st_pyecharts(bar,width=1000,height=600)
 
+    st.write("""
+    #####  结论
+    弹幕与评论可以很好的体现一个视频的互动率，从图中可以看出，弹幕与评论的走势基本一致，弹幕越多评论则越高，创作者平时也可以多多关注这方面的数据
+    """)
+
     st.write('---')
     st.write("""
     ###  热门视频的时长分布
@@ -647,4 +642,7 @@ def data_analysis():
     ) 
     components.html(b6, width=1000, height=500)
 
-    
+    st.write("""
+    #####  结论
+    可以看出大部分热门视频的时长集中在0-6分钟，过长的视频观众容易失去耐心，从而间接的影响播放量。视频创作者可以把视频的时长控制在6分钟之内从而提高视频热度
+    """)
