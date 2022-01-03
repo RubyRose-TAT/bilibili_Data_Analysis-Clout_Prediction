@@ -23,7 +23,7 @@ git clone git@github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction.gi
 * Download ZIP
 
 ```bash
-https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction
+https://github.com/RubyRose-TAT/bilibili_Data_analysis-Clout_prediction/archive/refs/heads/main.zip
 ```
 
 ##### 安装依赖:
